@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emotion Tracker</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Track Your Emotions</h2>
+            <form id="emotion-form">
+                <label for="emotion">Select your emotion:</label>
+                <select id="emotion" name="emotion">
+                    <option value="happy">Happy</option>
+                    <option value="sad">Sad</option>
+                    <option value="angry">Angry</option>
+                    <option value="surprised">Surprised</option>
+                    <option value="anxious">Anxious</option>
+                </select>
+                <label for="notes">Add notes:</label>
+                <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Your Emotion History</h2>
+            <ul id="emotion-history"></ul>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
